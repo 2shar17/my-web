@@ -1,16 +1,49 @@
-h2 {
-  font-family: 'Pattaya', sans-serif;
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
   font-family: 'Pattaya', sans-serif;
+  font-size: 8vw;
+}
+
+h2 {
+  font-family: 'Pattaya', sans-serif;
+  font-size: 48px;
+}
+
+h3{
+  font-family: 'Palanquin', sans-serif;
+  font-size: 2.5vw;
+}
+h4{
+  font-family: 'Palanquin', sans-serif;
+  font-size: 22px;
+}
+
+h5{
+  font-family: 'Orienta', sans-serif;
+  font-size: 24px;
 }
 
 p {
   font-family: 'Orienta', sans-serif;
   margin-bottom: 3px;
-  padding-top: 6px;
-  font-size: 0.7rem;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+hr{
+  width: 3%;
+  border-style: none;
+  border-top: 6px dotted;
+  color: white;
+  align-items: center;
+  position: absolute;
+  left: 48.5%;
 }
 
 .container-fluid {
@@ -19,11 +52,13 @@ p {
 }
 
 .container {
-  display: flex;
+  width: 15%;
+  height: 300px;
 }
 
 #bar {
   background-color: #1F203A;
+  padding: 1% 15%;
 }
 
 .alng {
@@ -35,32 +70,50 @@ p {
 /* About me */
 #about-me {
   background-color: #A3DA8D;
+  padding-top: 6%;
+  padding-bottom: 11%;
+}
+
+.saurabh{
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 125%;
+  left: 30%;
 }
 
 .tushar-img {
-  width: 90%;
-  border-radius: 10px;
-  border-bottom-right-radius: 45px;
+  width: 100%;
+  border-radius: 20%;
+  border-bottom-right-radius: 37%;
+  padding-top: 10%;
+  position: relative;
 }
 
 .txt {
   text-align: center;
   font-family: 'Orienta', sans-serif;
-  font-size: 0.9rem;
+  font-size: 2.5vw;
+  display: inline-block;
+  Padding-left: 10%;
+  padding-top: 6%;
 }
+
 
 /* education */
 #education {
   background-color: #1F203A;
   color: white;
-  height: 450px;
+  height: auto;
+  padding-top: 10%;
+  position: relative;
 }
 
-#education-carousel {
+/* #education-carousel {
   display: block;
   justify-content: center;
   margin: 5px auto;
-}
+} */
 
 li {
   color: green;
@@ -71,12 +124,11 @@ li {
 .card {
   border-radius: 50%;
   text-align: center;
-  justify-content: center;
-
 }
 
 .card-text {
   color: black;
+  font-size: 1vw;
 }
 
 .card-title {
@@ -85,6 +137,7 @@ li {
 
 .card-body{
   padding: 0;
+  margin-top: 50px;
 }
 
 .text-muted{
@@ -92,36 +145,41 @@ li {
 }
 
 .card-link{
-
+  padding-top: 10px;
+  text-decoration: none;
+  align-items: center;
 }
 
 .matric{
   background-color: #F2FFE9;
-  height: 13rem;
-  width: 13rem;
+  width: 100%;
+  padding-bottom: 100%;
   line-height: 0.5rem;
-  padding-top: 1.5rem;
+  padding-top: 5%;
   margin-top: 23px;
-  margin-left: 16px;\
+  margin-left: 16px;
+
+
 }
 
 .college{
   background-color: #A6CF98;
-  height: 13rem;
-  width: 13rem;
+  width: 100%;
+  padding-bottom: 100%;
   line-height: 0.5rem;
-  padding-top: 1.5rem;
+  padding-top: 5%;
   color: #557C55;
   margin-top: 23px;
   margin-left: 16px;
+
 }
 
 .grad{
   background-color: #557C55;
-  height: 13rem;
-  width: 13rem;
-  line-height: 0.5rem;
-  padding-top: 2.5rem;
+  width: 100%;
+  padding-bottom: 100%;
+  line-height: 10%;
+  padding-top: 5%;
   margin-top: 23px;
   margin-left: 16px;
 }
@@ -138,12 +196,103 @@ li {
 .exper {
   background-color: #FFF3D4;
   color: black;
-  border-radius: 15px;
-  border-bottom-right-radius: 80px;
+  border-radius: 25px;
+  border-bottom-right-radius: 137px;
   margin: 10px 5px 10px;
   line-height: 0.7rem;
-  width: 15rem;
+  height: 12vh;
+  width: 70vw;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.exper1{
+  margin-bottom: 20px;
+}
+
+.exper2{
+  margin-left: 200px;
+  margin-bottom: 20px;
+}
+
+.exper3{
+  margin-left: 400px;
+  margin-bottom: 20px;
+}
+
+@media(max-width: 1280px min-width: 1001px){
+  .exper2{
+    margin-left: 0px;
+  }
+  .exper3{
+    margin-left: 0px;
+  }
+}
+
+@media(max-width: 1000px min-width: 561px) {
+  .tushar-img {
+    width: 100%;
+    margin: auto;
+    border-radius: 20%;
+    border-bottom-right-radius: 37%;
+  }
+  .txt{
+    font-size: 4vw;
+  }
+  .saurabh{
+    top: 98vh;
+    left: 30vw;
+  }
+  .exper{
+    height: 12vh;
+    width: 70vw;
+  }
+}
+
+@media(max-width: 560px min-width: 491px){
+  h4{
+    font-size: 1.2rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .tushar-img {
+    width: 100%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 37%;
+    padding-top: 10%;
+    position: relative;
+  }
+}
+
+@media(max-width: 490px){
+  h4{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.7rem;
+    line-height: 0rem;
+  }
+  .tushar-img {
+    width: 100%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 37%;
+    padding-top: 10%;
+    position: relative;
+  }
+  .saurabh{
+    top: 50%;
+    left: 60%;
+  }
+  .exper2{
+    margin-left: 0px;
+  }
+  .exper3{
+    margin-left: 0px;
+  }
 }
 
 /* Skills & Hobbies */
@@ -158,11 +307,42 @@ li {
   border-radius: 15px;
   margin: 10px 5px 10px;
   line-height: 0.7rem;
+  position: relative;
 }
 
 .s-h-img {
-  width: 4.5rem;
+  width: 156px;
   align-items: center;
+}
+
+/* .r1{
+  position: relative;
+} */
+
+.text-r1{
+  display: inline-block;
+}
+
+.img-r1{
+  display: inline-block;
+}
+
+.text-r2{
+  display: inline-block;
+  text-align: right;
+}
+
+.img-r2{
+  display: inline-block;
+  float: right;
+}
+
+.text-r3{
+  display: inline-block;
+}
+
+.img-r3{
+  display: inline-block;
 }
 
 .first-part {
@@ -185,6 +365,66 @@ li {
   background-color: #A3DA8D;
 }
 
+.form-group{
+  margin-bottom: 1rem;
+  transition: all .3s;
+  height: 2rem;
+}
+
+.form-label{
+  font-size: 1em;
+  color: green;
+  display: block;
+  opacity:1;
+  transform: translate(0.7em, -4em);
+  transform-origin: 0 0;
+  transition: all .3s;
+}
+
+.form-control{
+  box-shadow: none;
+  background-color: rgba(0,0,0, .02);
+  border-radius: 0px;
+  border-color: #ccc;
+  border-style: none none solid none;
+  transition: all .5s;
+}
+
+.form-control::placeholder{
+  color: transparent;
+}
+
+.form-control:focus{
+  box-shadow: none;
+  outline: none;
+  border-color: orange;
+}
+
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label
+{
+  transform: translate(0.7em, -1.5em) scale(0.4);
+}
+
+.form-group:focus-within{
+  transform: scale(1.02,1.02);
+}
+
+/* Submit button  */
+.submit-button{
+  background-color:#77cc6d;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: none;
+  transition: 0.3s;
+}
+
+.submit-button:hover{
+  background-color: #c3fac8;
+}
+
 /* Footer */
 #footer {
   background-color: #1F203A;
@@ -194,4 +434,6 @@ li {
 
 .footer-link {
   color: white;
+  padding: 1% 1%;
+  font-size: 30px;
 }

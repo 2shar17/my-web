@@ -14,8 +14,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Galada&family=Montserrat:wght@100;300;500;700;800;900&family=Oleo+Script+Swash+Caps:wght@700&family=Orienta&family=Pattaya&family=Ubuntu:wght@300;400;500&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orienta&family=Palanquin&family=Pattaya&display=swap" rel="stylesheet">
 
   <!-- css script -->
   <link rel="stylesheet" href="styles.css">
@@ -34,7 +33,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+          <div class="navbar-nav ms-auto">
             <!--992 x 760-->
             <a class="nav-link active" aria-current="page" href="#about-me">About-me</a>
             <a class="nav-link" href="#education">Education</a>
@@ -51,19 +50,19 @@
   <section id="about-me" class="alng">
 
     <div class="container-fluid">
-      <h1>Saurabh</h1>
+      <h1 class="saurabh">Saurabh</h1>
       <div class="row">
-        <div class="col">
+        <div class="container-fluid col-12 col-lg-6 col-md-12 col-sm-12">
           <img class="tushar-img" src="images/img.jpg" alt="tushar-img">
         </div>
 
-        <div class="col txt">
-          <p>An enthusiast of new
-            techonology. Love keeping it
-            simple. Have a backgroud of
-            Electrical Engineering which has
-            helped me to become punctual,
-            attentive and disciplined.</p>
+        <div class="container-fluid col-12 col-lg-6 col-md-12 col-sm-12 txt">
+          An enthusiast of new
+          techonology. Love keeping it
+          simple. Have a backgroud of
+          Electrical Engineering which has
+          helped me to become punctual,
+          attentive and disciplined.
         </div>
       </div>
 
@@ -75,7 +74,7 @@
   <section id="education" class="alng">
     <div class="container-fluid">
       <h2>Education</h2>
-
+      <!--
 
       <div id="education-carousel" class="carousel slide" data-bs-interval="false">
         <div class="carousel-indicators">
@@ -83,87 +82,106 @@
           <button type="button" data-bs-target="#education-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#education-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner"> -->
 
-          <div class="carousel-item active">
-            <!-- <div class="col-md-12"> -->
-              <div class="card matric">
-                <div class="card-body">
-                  <h5 class="card-title">Matriculation</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Class I to Class X</h6>
-                  <p class="card-text">Christ Jyoti School</p>
-                  <p class="card-text">Percentage: 84.8%</p>
-                  <p class="card-text">Year: 2003-2013</p>
-                  <a href="#" class="card-link">CJS</a>
-                </div>
-              </div>
-            <!-- </div> -->
-          </div>
-          <div class="carousel-item">
-            <!-- <div class="col-md-12"> -->
-              <div class="card college">
-                <div class="card-body">
-                  <h5 class="card-title">Higher Secondary</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Class XI to Class XII</h6>
-                  <p class="card-text">Ramanujan Jr. College,
-                  <p class="card-text">Percentage: 87.8%</p>
-                  <p class="card-text">Year: 2013-2015</p>
-                  <a href="#" class="card-link">Ramanajun Jr. College</a>
-                </div>
-              </div>
-            <!-- </div> -->
-          </div>
-          <div class="carousel-item">
-            <!-- <div class="col-md-12"> -->
-              <div class="card grad">
-                <div class="card-body">
-                  <h5 class="card-title">Graduation</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">B.Tech in Electrical Engineering</h6>
-                  <p class="card-text">NIT Silchar</p>
-                  <p class="card-text">Percentage: 90.3%</p>
-                  <p class="card-text">Year: 2015-2019</p>
-                  <a href="#" class="card-link">NITS</a>
-                </div>
-              </div>
-            <!-- </div> -->
-          </div>
+      <!-- <div class="carousel-item active"> -->
+      <!-- <div class="col-md-12"> -->
 
+      <div class="row">
+        <div class="col col-lg-4 col-md-4 col-sm-12">
+          <div class="container card matric">
+            <div class="card-body">
+              <h3 class="card-title">Matriculation</h3>
+              <h4 class="card-subtitle mb-2 text-muted">(Class I to Class X)</h4>
+              <p class="card-text">Christ Jyoti School</p>
+              <p class="card-text">Percentage: 84.8%</p>
+              <p class="card-text">Year: 2003-2013</p>
+              <a href="#" class="card-link">CJS</a>
+            </div>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#education-carousel" data-bs-slide="prev">
+
+        <div class="col col-lg-4 col-md-4 col-sm-12">
+          <div class="container card college">
+            <div class="card-body">
+              <h3 class="card-title">Higher Secondary</h3>
+              <h4 class="card-subtitle mb-2 text-muted">(Class XI to Class XII)</h4>
+              <p class="card-text">Ramanujan Jr. College,
+              <p class="card-text">Percentage: 87.8%</p>
+              <p class="card-text">Year: 2013-2015</p>
+              <a href="#" class="card-link">Ramanajun Jr. College</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-4 col-md-4 col-sm-12">
+          <div class="container card grad">
+            <div class="card-body">
+              <h3 class="card-title">Graduation</h3>
+              <h4 class="card-subtitle mb-2 text-muted">(B.Tech in Electrical Engineering)</h4>
+              <p class="card-text">NIT Silchar</p>
+              <p class="card-text">Percentage: 90.3%</p>
+              <p class="card-text">Year: 2015-2019</p>
+              <a href="#" class="card-link">NITS</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- <div class="carousel-item"> -->
+      <!-- <div class="col-md-12"> -->
+
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- <div class="carousel-item"> -->
+      <!-- <div class="col-md-12"> -->
+
+      <!-- </div> -->
+      <!-- </div> -->
+
+    </div>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#education-carousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#education-carousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
+        </button> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <hr>
   </section>
+
 
   <!-- Experiance -->
   <section id="experiance" class="alng">
     <div class="container-fluid">
       <h2>Experiance</h2>
-      <div class="row exper">
-        <p>Power Grid Corporation of India Ltd.</p>
+      <div class="row exper exper1">
+        <h4>Power Grid Corporation of India Ltd.</h4>
         <p>Period: Oct 2019 - Current</p>
-        <p>As an Engineer</p>
+        <p>Executive Engineer</p>
       </div>
-      <div class="row exper">
-        <p>Assam Electricity Grid Corporation Ltd.</p>
+      <div class="row exper exper2">
+        <h4>Assam Electricity Grid Corporation Ltd.</h4>
         <p>Period: May 2018 - June 2018</p>
         <p>As a Summer Internee</p>
       </div>
-      <div class="row exper">
-        <p>Doorhopper.in (Start-up)</p>
+      <div class="row exper exper3">
+        <h4>Doorhopper.in (Start-up)</h4>
         <p>Period: Aug 2016 - July 2017</p>
         <p>A member of the designing team.</p>
       </div>
     </div>
 
     </div>
+    <hr>
   </section>
+
 
   <!-- Skills & Hobbies -->
   <section id="skills-hobbies" class="alng">
@@ -171,39 +189,52 @@
       <h2>Skills & Hobbies</h2>
 
       <div class="row s-h r1">
-        <div class="col first-part">
-          <img class="s-h-img" src="images\software-development.png" alt="Full-stack-developer">
+        <div class="col">
+          <div class="img-r1">
+            <img class="s-h-img" src="images\software-development.png" alt="Full-stack-developer">
+          </div>
+          <div class="text-r1">
+            <h4>Web Developer</h4>
+            <p>HTML 5/ CSS 3/ Javascript</p>
+            <p>Full stack developer</p>
+          </div>
         </div>
+        <div class="col">
 
-        <div class="col second-part">
-          <h6>Web Developer</h6>
-          <p>HTML 5/ CSS 3/ Javascript</p>
-          <p>Full stack developer</p>
         </div>
       </div>
 
       <div class="row s-h r2">
-        <div class="col second-part">
-          <h6>UI/ UX Designing</h6>
-          <p>Figma for wirframing</p>
-          <p>Adobe XD for UI/UX designing</p>
+        <div class="col">
+
         </div>
         <div class="col">
-          <img class="s-h-img first part" src="images\web-design.png" alt="Designer">
+          <div class="text-r2">
+            <h4>UI/ UX Designing</h4>
+            <p>Figma for wirframing</p>
+            <p>Adobe XD for UI/UX designing</p>
+          </div>
+          <div class="img-r2">
+            <img class="s-h-img" src="images\web-design.png" alt="Designer">
+          </div>
         </div>
       </div>
 
       <div class="row s-h r3">
         <div class="col">
-          <img class="s-h-img first-part" src="images\image-editing.png" alt="Editor">
+          <div class="img-r3">
+            <img class="s-h-img" src="images\image-editing.png" alt="Editor">
+          </div>
+          <div class="text-r3">
+            <h4>Editing</h4>
+            <p>Photoshop for editing images</p>
+            <p>Make your pictures look stunning</p>
+          </div>
         </div>
-        <div class="col second-part">
-          <h6>Editing</h6>
-          <p>Photoshop for editing images</p>
-          <p>Make your pictures look stunning</p>
+        <div class="col">
+
         </div>
       </div>
-
     </div>
     <!-- <div class="container-fluid">
       <div class="row s-h r1">
@@ -217,7 +248,9 @@
         </div>
       </div>
     </div> -->
+    <hr>
   </section>
+
 
   <!-- Contact me -->
   <section id="contact-me" class="alng">
@@ -225,10 +258,23 @@
       <h2>Contact me</h2>
       <div class="row">
         <div class="col">
-          <p>Enter your name: </p>
-          <p>Enter your email: </p>
-          <p>Drop a question</p>
-          <button type="button" name="button" class="contact-button">Submit</button>
+          <div class="container-fluid">
+            <form class="form" action="index.html" method="post">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Enter your name" id="name" name="name" tabindex="1" required value=""><br>
+                <label for="name" class="form-label">Name</label>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Enter your email" id="email" name="email" tabindex="2" required value=""><br>
+                <label for="email" class="form-label">Email</label>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Enter your comments or questions" id="comment" name="comment" tabindex="3" required value=""><br>
+                <label for="comment" class="form-label">Comment</label>
+              </div>
+            </form>
+          </div>
+          <button type="button" name="button" class="submit-button">SUBMIT</button>
         </div>
         <div class="col">
           <p>Give a call in: </p>
@@ -238,7 +284,9 @@
       </div>
 
     </div>
+    <hr class="dotted">
   </section>
+
 
   <!-- Footer -->
   <section id="footer" class="alng">
@@ -250,7 +298,6 @@
     </p>
     <p>© Copyright Tushar</p>
   </section>
-
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
