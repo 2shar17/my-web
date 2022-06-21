@@ -201,8 +201,8 @@ li {
   border-bottom-right-radius: 137px;
   margin: 10px 5px 10px;
   line-height: 0.7rem;
-  height: 12vh;
-  width: 70vw;
+  height: 25%;
+  width: 50%;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -220,7 +220,7 @@ li {
   margin-bottom: 20px;
 }
 
-@media(max-width: 1280px min-width: 1001px){
+@media(max-width: 1280px) and (min-width: 1001px){
   .exper2{
     margin-left: 0px;
   }
@@ -229,7 +229,7 @@ li {
   }
 }
 
-@media(max-width: 1000px min-width: 561px) {
+@media(max-width: 1000px) and (min-width: 561px) {
   .tushar-img {
     width: 100%;
     margin: auto;
@@ -244,12 +244,18 @@ li {
     left: 30vw;
   }
   .exper{
-    height: 12vh;
-    width: 70vw;
+    height: 22%;
+    width: 50%;
+  }
+  .exper2{
+    margin-left: 0px;
+  }
+  .exper3{
+    margin-left: 0px;
   }
 }
 
-@media(max-width: 560px min-width: 491px){
+@media(max-width: 560px) and (min-width: 491px){
   h4{
     font-size: 1.2rem;
   }
@@ -264,6 +270,12 @@ li {
     border-bottom-right-radius: 37%;
     padding-top: 10%;
     position: relative;
+  }
+  .exper2{
+    margin-left: 0px;
+  }
+  .exper3{
+    margin-left: 0px;
   }
 }
 
